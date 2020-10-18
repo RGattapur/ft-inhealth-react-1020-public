@@ -1,0 +1,26 @@
+*{}
+
+.city{
+  font-family: lato;
+  font-size: 1.5rem;
+  color:darkslategrey;
+  margin:2rem auto;
+  user-select: none;
+  border:none;
+  overflow-wrap: break-word;
+  width:64%;
+}
+
+section{
+  margin:1rem 0;
+  padding:0.5rem;
+  border-bottom: 1px solid lightgrey;
+  cursor: pointer;
+}
+
+span{
+  color:orangered;
+  margin-right: 1rem;
+  cursor: pointer;
+  letter-spacing: 1px;
+}

@@ -1,0 +1,39 @@
+body {
+    font-family: lato, sans-serif;
+    font-size: 1rem;
+}
+
+.shop {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.panel {
+    margin: 0.5rem;
+    width: 8.5rem;
+    border: 1px solid darkslategrey;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: ghostwhite;
+}
+
+.panel h2 {
+    color: brown;
+}
+
+.panel h4 {
+    font-size: 1rem;
+}
+
+.panel p {
+    padding: 0.5rem;
+    background-color: sienna;
+    color: white;
+    cursor: pointer;
+    margin: 0.25rem;
+    display: inline-block;
+    border-radius: 2px;
+    user-select: none;
+}

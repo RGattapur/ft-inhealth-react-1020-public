@@ -1,0 +1,85 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+	font-family: 'Lato', sans-serif;
+	background-color:RoyalBlue;
+}
+
+.people{
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin:10rem auto;
+	width:80%;
+}
+
+.person, .choose{
+	margin:1rem;
+	background-color: goldenrod;
+	width:12rem;
+	text-align: center;
+	height:12rem;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.person p{
+	position: relative;
+	top:2rem;
+	font-size: 2rem;
+}
+
+.choose{
+	background-color: forestgreen;
+	color:white;
+}
+
+.choose p{
+	position: relative;
+	top:2rem;
+	font-size: 6rem;
+	margin:0 auto;
+}
+
+.question{
+	color:white;
+	text-align: center;
+	margin:4rem auto;
+	font-size: 4rem;
+	width:80%;
+
+}
+
+.question:focus {
+    outline: 0px solid transparent;
+}
+
+.faded{
+	opacity: 0.2;
+	transform: scale(0.5);
+}
+
+:root {
+	--anim-time: 1s; 
+}
+
+.rotate {
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    margin:-60px 0 0 -60px; */
+    animation:spin var(--anim-time) ease-out infinite;
+}
+
+@keyframes spin { 
+	50% { 
+		transform:rotate(180deg) scale(0.05);
+	} 
+	0%, 100% { 
+		transform:rotate(-180deg) scale(1); 
+	} 
+}

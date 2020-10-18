@@ -1,0 +1,77 @@
+body{
+    background-color: PaleTurquoise;
+    font-family: lato,sans-serif;
+    color:darkslategrey;
+}
+
+.tank, .features{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.fish{
+    margin:0.5rem;
+    border:1px solid darkslategrey;
+    padding:1rem;
+    background-color: white;
+}
+
+.fishName{
+    text-transform: capitalize;
+    color:darkslategrey;
+    font-size: 1.5rem;
+    margin:1rem 0;
+    letter-spacing: 4px;
+    opacity: 0.64;
+}
+
+input{
+    display:inline-block;
+    font-size: 1.5rem;
+    padding:0;
+    width:10rem;
+}
+
+.button{
+    background-color: darkslategray;
+    color:white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding:1rem;
+    margin:1rem;
+    cursor: pointer;
+    width:8rem;
+    text-align: center;
+    user-select: none;
+}
+
+.disabled{
+    opacity: 0.2;
+    cursor:default;
+}
+
+hr{
+    margin:1rem;
+    border:1px solid darkslategrey;
+}
+
+.debug, .total{
+    text-align: center;
+    font-size: 1.55rem;
+    width:100%;
+    margin:2rem auto;
+}
+
+.remove{
+    background-color: darkslategray;
+    color:white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding:0.5rem;
+    margin:1rem 0;
+    cursor: pointer;
+    width:5rem;
+    text-align: left;
+
+}

@@ -1,0 +1,6 @@
+[
+	{ "image":"caceres.jpg", "name":"Caceres", "region":"Extremadura", "popl":0.1, "temp":76,"id":"1087" },
+	{ "image":"alicante.jpg", "name":"Alicante", "region":"Valencia", "popl":0.7, "temp":68,"id":"1064" },
+	{ "image":"zaragoza.jpg", "name":"Zaragoza", "region":"Aragon", "popl":0.7, "temp":64,"id":"1077" },
+	{ "image":"vigo.jpg", "name":"Vigo", "region":"Galician", "popl":0.2, "temp":60,"id":"1045" }
+]

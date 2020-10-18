@@ -1,0 +1,6 @@
+[
+	{ "name":"Statue Liberty", "photo":"liberty.jpeg", "price":25, "id":"sl25", "open":true },
+	{ "name":"Empire State", "photo":"empire.jpeg" , "price":40, "id":"em40", "open":true },
+	{ "name":"Natural History", "photo":"natural.jpeg" , "price":20, "id":"nt20", "open":true },
+	{ "name":"Metropolitan Museum", "photo":"metro.jpeg" , "price":55, "id":"mt55", "open":true }
+]

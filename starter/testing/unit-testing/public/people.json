@@ -1,0 +1,6 @@
+[
+    { "name":"Bert Smith", "age":64 },
+    { "name":"Jane Jones", "age":25 },
+    { "name":"Alf Module", "age":78 },
+    { "name":"Wilma Closure", "age":48 }
+]

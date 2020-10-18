@@ -1,0 +1,16 @@
+.nation {
+    font-size: 1.25rem;
+    font-family: lato,sans-serif;
+    margin: 1rem;
+    color: darkslategrey;
+}
+
+.city {
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 4px;
+}
+
+.city span {
+    color: orangered;
+    margin-left: 0.5rem;
+}

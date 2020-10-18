@@ -1,0 +1,57 @@
+*{
+    margin:0;
+    padding:0;
+    color:darkslategrey;
+    font-family: lato,sans-serif;
+}
+
+.people{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin:2rem auto;
+}
+
+.person{
+    border:1px solid lightgrey;
+    width:12rem;
+    text-align: center;
+    margin:0.25rem;
+    padding:0.5rem;
+    cursor: pointer;
+}
+
+.person:hover{
+    background-color: beige;
+}
+
+img{
+    border-radius: 50%;
+    width:4rem;
+    display: block;
+    margin:0 auto;
+    padding:1rem;
+}
+
+p{
+    font-size: 0.8rem;
+}
+
+.name{
+    color:orangered;
+    font-size: 1.1rem;
+}
+
+.size{
+    background-color: darkslategrey;
+    padding:1rem;
+    margin:1rem;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.5rem;
+    color:white;
+    width:2rem;
+    border-radius: 50%;
+    user-select: none;
+}

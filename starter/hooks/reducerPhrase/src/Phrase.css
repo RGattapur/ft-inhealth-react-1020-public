@@ -1,0 +1,26 @@
+
+  @import url('https://fonts.googleapis.com/css?family=Oswald');
+
+  body{
+    font-family: 'Oswald',tahoma;
+    color: darkslategrey;
+    font-size: 1.5rem;
+    user-select: none;
+    margin:2rem 0;
+  }
+
+  section{
+    width:64%;
+    margin:2rem auto;
+  }
+
+  p{
+    padding:1rem 0;
+    border-bottom: 1px solid lightgray;
+    color:brown;
+    font-size: 2.5rem;;
+  }
+
+  button{
+    margin:0.5rem
+  }
