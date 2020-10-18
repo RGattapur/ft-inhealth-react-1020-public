@@ -1,0 +1,32 @@
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    color:darkslategrey;
+}
+
+body{
+    font-family: oswald;
+    line-height: 2;
+}
+
+.page{
+    margin:1rem;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:0.5rem;
+    width:25%;
+}
+
+.logo{
+    width:16rem;
+    height:16rem;
+    background-color: gold;
+    margin:0;
+    font-size: 2.5rem;
+    text-align: left;
+    line-height: 1;
+    padding:0.5rem;
+    cursor: pointer;
+}
