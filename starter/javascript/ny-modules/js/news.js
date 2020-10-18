@@ -2,13 +2,49 @@
 // news.js
 // ===========================================================================================
 
-import { news as nytimes } from "./data.js"; // import {news} from "./data.js"
+const news = [
+    { headline:"Ronaldo transfers to Real Madrid" , type:"sport" },
+    { headline:"Signs of water found on Mars" , type:"science" },
+    { headline:"Tom Hanks directs documentary about food" , type:"arts" },
+    { headline:"Record high temperatures in Spain" , type:"climate" },
+    { headline:"Decline in Cash ISA investments" , type:"money" }
+]
 
-import config from "./config.js"; // import {config} from "./config.js"
+// ===========================================================================================
 
-import {utils} from "./utils.js"; // import {createSlug, createId} from "./utils.js"
+const config = {
+    legal : "© 2020 The New York Times Company",
+    address : "620 Eighth Avenue, New York, NY 10018"
+}
 
-import * as view from "./view.js"; // import {drawStory, drawFooter} from "./view.js"
+// ===========================================================================================
+
+// "Ronaldo transfers to Real Madrid" ====> "https://nytimes.com/ronaldo-transfers-to-real-madrid.html"
+
+const createSlug = story => `https://nytimes.com/${story.trim().split(" ").join("-").toLowerCase()}.html` 
+
+// "Ronaldo transfers to Real Madrid" ====> "rttrm-208572"
+
+const createId = story => story.match(/\b(\w)/g).join("").toLowerCase() + "-" + Math.floor(Math.random()*1000000)
+
+// ===========================================================================================
+
+const drawStory = ob => {
+
+    let story = `
+        <a href='${ ob.link}' >
+            <section class="story" data-id="${ ob.id }">
+                <h4>${ ob.type }</h4>
+                <p>${ ob.headline }</p>
+            </section>
+        </a>
+    ` ;
+
+    document.querySelector(".news").innerHTML += story
+
+}
+
+const drawFooter = ({legal,address}) => document.querySelector(".footer").innerHTML += `${address} ${legal}`
 
 // ===========================================================================================
 
@@ -23,13 +59,13 @@ Add a link and ID to each story object.
 }
 */
 
-const stories = nytimes.map( story => ({ ...story, link : utils.createSlug( story.headline ), id: utils.createId( story.headline )}))
+const stories = news.map( story => ({ ...story, link : createSlug( story.headline ), id:createId( story.headline )}))
 
 // ===========================================================================================
 
-stories.forEach( view.drawStory );
+stories.forEach( drawStory );
 
-view.drawFooter( config );
+drawFooter( config );
 
 // ===========================================================================================
 
