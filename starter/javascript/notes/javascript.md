@@ -317,7 +317,7 @@
 - The function defines a **locally scoped** variable area, which only exists temporarily at the moment that the function is running.
 
 		function calcArea(a,b) {
-			let area = a+b;
+			let area = a*b;
 			return area;
 		}
 		
@@ -599,7 +599,8 @@
 # Functional programming
 
 - Functional programming uses methods like **sort, reduce, forEach, map and filter** to transform data in a concise way.
-- These methods are **pure**. They do not change the original data.
+- Some methods (filter,reduce and map) are **pure**. They do not change the original data.
+- Others like **sort** do change the original.
 - They can be **chained** together in a pipeline to acheive more complex transformations.
 - Functional programming fits well with **ES6 arrow** functions.
 - Sort, reduce, map and filter are **pure** functions. They 
